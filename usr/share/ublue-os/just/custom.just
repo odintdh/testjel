@@ -10,6 +10,12 @@ setup-flatpaks:
 setup-gaming:
   echo 'Setting up gaming experience ... lock and load.'
   flatpak install -y --user \\
+  io.github.antimicrox.antimicrox \\
+  net.lutris.Lutris \\
+  info.mumble.Mumble \\
+  im.riot.Riot \\
+  com.github.mtkennerly.ludusavi \\
+  com.github.Matoking.protontricks \\
   com.discordapp.Discord \\
   com.feaneron.Boatswain \\
   org.freedesktop.Platform.VulkanLayer.MangoHud//22.08 \\
@@ -30,3 +36,7 @@ setup-gaming:
 nix-me-up:
   echo 'Setting phasers to kill. Installing nix.'
   /usr/bin/ublue-nix-install
+
+distrobox-fedoraboxkit:
+  echo 'Creating Fedora mutable environment'
+  distrobox create --image ghcr.io/odintdh/fedoraboxkit:latest -n fedoraboxkit -Y

@@ -1,0 +1,44 @@
+[org/gnome/shell] 
+favorite-apps = ['org.mozilla.firefox.desktop','org.gnome.Nautilus.desktop','com.raggesilver.BlackBox.desktop','org.gnome.Settings.desktop','yelp.desktop', 'org.gnome.Software.desktop']
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-panel@jderose9.github.com','gsconnect@andyholmes.github.io']
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/jel/backgrounds/jel.jpg'
+picture-uri-dark='file:///usr/share/jel/backgrounds/jel.jpg'
+picture-options='stretched'
+primary-color='000000'
+secondary-color='FFFFFF'
+
+[org/gnome/shell/extensions/dash-to-panel]
+group-apps=false
+group-apps-label-max-width=40
+group-apps-use-launchers=true
+dot-color-override=true
+appicon-margin=1
+
+
+[org/gnome/desktop/wm/preferences]
+button-layout=":minimize,maximize,close"
+num-workspaces='4'
+
+[org/gnome/desktop/interface]
+enable-hot-corners=false
+show-battery-percentage=true
+color-scheme='prefer-dark'
+
+[com/raggesilver/BlackBox]
+command-as-login-shell=true
+use-custom-command=true
+custom-shell-command='distrobox enter fedoraboxkit'
+window-width=975
+window-height=650
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='gnome-terminal'
+name='gnome-terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>u'
+command='flatpak run com.raggesilver.BlackBox'
+name='blackbox'

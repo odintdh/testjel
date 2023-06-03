@@ -1,18 +1,18 @@
-title: Welcome to uBlue
+title: Bienvenido a JelOS GNOME
 properties:
   mode: "run-on-change"
 screens:
   first-screen:
     source: yafti.screen.title
     values:
-      title: "Welcome to uBlue (Alpha)"
-      icon: "/path/to/icon"
+      title: "Bienvenido a JelOS GNOME (Alpha)"
+      icon: "/usr/share/jel/icon/icon.png"
       description: |
-        This guided installer will help you get started with your new system.
+        Este asistente te va ayudar a empezar a usar tu nuevo sistema.
   can-we-modify-your-flatpaks:
     source: yafti.screen.consent
     values:
-      title: Welcome, Traveler!
+      title: ¡Bienvenido, Linuxero!
       condition:
         run: flatpak remotes --columns=name | grep fedora
       description: |
@@ -26,7 +26,7 @@ screens:
   check-system-flathub:
     source: yafti.screen.consent
     values:
-      title: Missing Flathub Repository (System)
+      title: Falta Repositorio Flathub (System)
       condition:
         run: flatpak remotes --system --columns=name | grep flathub | wc -l | grep '^0$'
       description: |
@@ -36,17 +36,17 @@ screens:
   check-user-flathub:
     source: yafti.screen.consent
     values:
-      title: Missing Flathub Repository (User)
+      title: Falta Repositorio Flathub (Usuario)
       condition:
         run: flatpak remotes --user --columns=name | grep flathub | wc -l | grep '^0$'
       description: |
-        We have detected that you don't have Flathub's repository on your current user account. We will now add that repository to your account.
+        Se ha detectado que no tienes en tu cuenta actual de usario el repositorio de Flathub. Se añadirá el repositorio a tu cuenta.
       actions:
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
   applications:
     source: yafti.screen.package
     values:
-      title: Application Installer
+      title: Instalador de Aplicaciones 
       show_terminal: true
       package_manager: yafti.plugin.flatpak
       package_manager_defaults:
@@ -54,9 +54,10 @@ screens:
         system: true
       groups:
         Core GNOME Apps:
-          description: Core system applications for the GNOME desktop environment.
+          description: Aplicaciones del sistema para el escritorio GNOME.
           default: true
           packages:
+            - BlackBox Terminal: com.raggesilver.BlackBox
             - Calculator: org.gnome.Calculator
             - Calendar: org.gnome.Calendar
             - Characters: org.gnome.Characters
@@ -78,7 +79,7 @@ screens:
             - Videos (Player): org.gnome.Totem
             - Weather: org.gnome.Weather
         System Apps:
-          description: System applications for all desktop environments.
+          description: Aplicaciones del sistema para todos los escritorios.
           default: true
           packages:
             - Deja Dup Backups: org.gnome.DejaDup
@@ -87,7 +88,7 @@ screens:
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Mozilla Firefox: org.mozilla.firefox
         Web Browsers:
-          description: Additional browsers to complement or replace Firefox.
+          description: Una selección de navegadores para complementar or reemplazar Firefox.
           default: false
           packages:
             - Brave: com.brave.Browser
@@ -95,31 +96,76 @@ screens:
             - Microsoft Edge: com.microsoft.Edge
             - Opera: com.opera.Opera
         Gaming:
-          description: "Rock and Stone!"
-          default: false
+          description: Nuestra selección de imprescindibles.
+          default: true
           packages:
+            - AntiMicroX: io.github.antimicrox.antimicrox
             - Bottles: com.usebottles.bottles
             - Discord: com.discordapp.Discord
-            - GNOME Games: org.gnome.Games
+            - Mumble: info.mumble.Mumble
+            - Element: im.riot.Riot
+            - Ludusavi: com.github.mtkennerly.ludusavi
+            - Lutris: net.lutris.Lutris
             - Heroic Games Launcher: com.heroicgameslauncher.hgl
             - Steam: com.valvesoftware.Steam
             - Gamescope (Utility): com.valvesoftware.Steam.Utility.gamescope
             - MangoHUD (Utility): org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
             - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
-            - Proton Updater for Steam: net.davidotek.pupgui2
+            - ProtonUp-Qt: net.davidotek.pupgui2
+            - Protontricks: com.github.Matoking.protontricks
+        Emulators:
+          description: Disfruta de lo Retro
+          default: false
+          packages:
+            - Arcade: org.mamedev.MAME
+            - DreamCast: org.flycast.Flycast
+            - MegaDrive: com.retrodev.blastem
+            - RetroArch: org.libretro.RetroArch
+            - PSP: org.ppsspp.PPSSPP
+            - PS1: org.duckstation.DuckStation
+            - PS2: net.pcsx2.PCSX2
+            - PS3: net.rpcs3.RPCS3
+            - ScummVM: org.scummvm.ScummVM
+            - Super Nintendo: dev.bsnes.bsnes
+            - GameCube/Wii: org.DolphinEmu.dolphin-emu
+            - WiiU: info.cemu.Cemu
+            - GameBoy Advance: io.mgba.mGBA
+            - Nintendo 3DS: org.citra_emu.citra
+            - Nintendo Switch: org.yuzu_emu.yuzu
+        Videogames:
+          description: Lo mejor en videojuegos libres.
+          default: false
+          packages:
+            - 0Ad:  com.play0ad.zeroad
+            - Battle for Wesnoth: org.wesnoth.Wesnoth
+            - OpenArena: ws.openarena.OpenArena
+            - Speed Dreams: org.speed_dreams.SpeedDreams
+            - SuperTuxKart: net.supertuxkart.SuperTuxKart
+            - Veloren: net.veloren.veloren
+            - Xonotic: org.xonotic.Xonotic
+        Video Game Development:
+          description: Todas las herramientas que necesitas para crear tus propios videojuegos.
+          default: false
+          packages:
+            - Ardour: org.ardour.Ardour
+            - Blender: org.blender.Blender
+            - Godot: org.godotengine.Godot
+            - LMMS: io.lmms.LMMS
+            - Krita: org.kde.krita
+            - Pixelorama: com.orama_interactive.Pixelorama
+            - Kdenlive: org.kde.kdenlive
         Office:
-          description: Boost your productivity.
+          description: Aumenta tu productividad.
           default: false
           packages:
             - LibreOffice: org.libreoffice.LibreOffice
             - OnlyOffice: org.onlyoffice.desktopeditors
             - Obsidian: md.obsidian.Obsidian
-            - Slack: com.slack.Slack
             - Standard Notes: org.standardnotes.standardnotes
             - Thunderbird Email: org.mozilla.Thunderbird
         Streaming:
-          description: Stream to the Internet.
-          default: false
+          description: Transmitir a través de Internet.
+          default: true
           packages:
             - OBS Studio: com.obsproject.Studio
             - VkCapture for OBS: com.obsproject.Studio.OBSVkCapture
@@ -130,14 +176,14 @@ screens:
   final-screen:
     source: yafti.screen.title
     values:
-      title: "All done!"
-      icon: "/path/to/icon"
+      title: "¡Hecho!"
+      icon: "/usr/share/jel/icon/icon.png"
       links:
-        - "Install More Applications":
+        - "Instalar más aplicaciones":
             run: /usr/bin/gnome-software
         - "Website":
-            run: /usr/bin/xdg-open https://ublue.it
-        - "Join the Discord Community":
-            run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx
+            run: /usr/bin/xdg-open https://jugandoenlinux.com/
+        - "Unete a la comunidad de Matrix de JugandoEnLinux":
+            run: /usr/bin/xdg-open https://matrix.to/#/+jugandoenlinux.com:matrix.org
       description: |
-        Thanks for trying uBlue, we hope you enjoy it!
+        ¡Gracias por probar JelOS GNOME, la versión de Fedora Siverblue de JugandoEnLinux!
