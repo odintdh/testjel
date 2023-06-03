@@ -5,15 +5,15 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 cd /tmp/
-# disable due compile error 
+# disable due to /usr/local/lib unavailable on Fedora SilverBlue 
 #pip install PQMusic
-git clone https://github.com/berarma/oversteer.git
-cd oversteer
-meson build
-cd build
-ninja install
-udevadm control --reload-rules && udevadm trigger
-rm -rf /tmp/oversteer
+#git clone https://github.com/berarma/oversteer.git
+#cd oversteer
+#meson build
+#cd build
+#ninja install
+#udevadm control --reload-rules && udevadm trigger
+#rm -rf /tmp/oversteer
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
 systemctl unmask dconf-update.service
