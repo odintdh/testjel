@@ -183,7 +183,7 @@ screens:
             run: /usr/bin/gnome-software
         - "Website":
             run: /usr/bin/xdg-open https://jugandoenlinux.com/
-        - "Unete a la comunidad de Matrix de JugandoEnLinux":
+        - "Únete a la comunidad de Matrix de JugandoEnLinux":
             run: /usr/bin/xdg-open https://matrix.to/#/+jugandoenlinux.com:matrix.org
       description: |
         ¡Gracias por probar JelOS GNOME, la versión de Fedora Siverblue de JugandoEnLinux!
