@@ -5,7 +5,8 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 cd /tmp/
-pip install PQMusic
+# disable due compile error 
+#pip install PQMusic
 git clone https://github.com/berarma/oversteer.git
 cd oversteer
 meson build
