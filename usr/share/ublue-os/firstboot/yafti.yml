@@ -130,11 +130,11 @@ screens:
             - GameCube/Wii: org.DolphinEmu.dolphin-emu
             - WiiU: info.cemu.Cemu
             - GameBoy Advance: io.mgba.mGBA
+            - Nintendo 64: io.github.simple64.simple64
             - Nintendo DS: net.kuribo64.melonDS
             - Nintendo 3DS: org.citra_emu.citra
             - Nintendo Switch: org.yuzu_emu.yuzu
             - Xbox: app.xemu.xemu
-            - 
         Videogames:
           description: Lo mejor en videojuegos libres.
           default: false
