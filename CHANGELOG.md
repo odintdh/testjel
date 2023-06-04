@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/odintdh/testjel/compare/v1.3.0...v1.4.0) (2023-06-04)
+
+
+### Features
+
+* added xbox and nintendo ds emulators ([37e7b9d](https://github.com/odintdh/testjel/commit/37e7b9d5df7cc711954e6adcfd66820b67499eee))
+* Nintendo 64 emulator ([5410310](https://github.com/odintdh/testjel/commit/5410310247e50216de16a2a143571e4d4394e2b0))
+
 ## [1.3.0](https://github.com/odintdh/testjel/compare/v1.2.0...v1.3.0) (2023-06-04)
 
 
