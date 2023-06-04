@@ -54,4 +54,4 @@ distrobox-universal:
   distrobox create --image mcr.microsoft.com/devcontainers/universal:latest -n universal -Y
 
 yafti:
-  yafti /etc/yafti.yml
+  yafti /usr/share/ublue-os/firstboot/yafti.yml
