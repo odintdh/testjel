@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/odintdh/testjel/compare/v1.1.0...v1.2.0) (2023-06-04)
+
+
+### Features
+
+* added more distrobox options in just ([7138c46](https://github.com/odintdh/testjel/commit/7138c4679a4e6ff0aaa9808551fe7493f7a3ab97))
+
 ## [1.1.0](https://github.com/odintdh/testjel/compare/v1.0.0...v1.1.0) (2023-06-04)
 
 
