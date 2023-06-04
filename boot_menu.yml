@@ -43,7 +43,7 @@ ublue_variants:
       - label: bluefin
       - label: bluefin-nvidia
         ks: /kickstart/ublue-os-nvidia.ks
-  - label: ublue-os/JelOS
+  - label: ublue-os/JelOS-GNOME
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: JelOS-GNOME
