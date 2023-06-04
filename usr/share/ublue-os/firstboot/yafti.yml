@@ -138,6 +138,7 @@ screens:
           packages:
             - 0Ad:  com.play0ad.zeroad
             - Battle for Wesnoth: org.wesnoth.Wesnoth
+            - Beyond All Reason: info.beyondallreason.bar
             - OpenArena: ws.openarena.OpenArena
             - Speed Dreams: org.speed_dreams.SpeedDreams
             - SuperTuxKart: net.supertuxkart.SuperTuxKart
