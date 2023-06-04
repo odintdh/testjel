@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/odintdh/testjel/compare/v1.2.0...v1.3.0) (2023-06-04)
+
+
+### Features
+
+* delete gnome-tour ([c288081](https://github.com/odintdh/testjel/commit/c288081e27cfc8eb66ac1417fe103dd6dbc9beaa))
+
 ## [1.2.0](https://github.com/odintdh/testjel/compare/v1.1.0...v1.2.0) (2023-06-04)
 
 
