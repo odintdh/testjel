@@ -49,7 +49,9 @@ distrobox-fedoraboxkit:
   echo 'Creating Fedora mutable environment'
   distrobox create --image ghcr.io/odintdh/fedoraboxkit:latest -n fedoraboxkit -Y
 
-
 distrobox-universal:
   echo 'Creating Universal Development distrobox ...'
   distrobox create --image mcr.microsoft.com/devcontainers/universal:latest -n universal -Y
+
+yafti:
+  yafti /etc/yafti.yml
