@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/odintdh/testjel/compare/v1.0.0...v1.1.0) (2023-06-04)
+
+
+### Features
+
+* change menu ([ddbc537](https://github.com/odintdh/testjel/commit/ddbc5374e108f5b137f006838388bee11da93ea7))
+
 ## 1.0.0 (2023-06-04)
 
 
