@@ -140,6 +140,7 @@ screens:
             - Battle for Wesnoth: org.wesnoth.Wesnoth
             - Beyond All Reason: info.beyondallreason.bar
             - OpenArena: ws.openarena.OpenArena
+            - Remnants of the Precursors: com.remnantsoftheprecursors.ROTP
             - Speed Dreams: org.speed_dreams.SpeedDreams
             - SuperTuxKart: net.supertuxkart.SuperTuxKart
             - Veloren: net.veloren.veloren
