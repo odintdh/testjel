@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/odintdh/testjel/compare/v1.4.0...v1.4.1) (2023-06-04)
+
+
+### Bug Fixes
+
+* yafti command in just ([a5c8633](https://github.com/odintdh/testjel/commit/a5c863348fa454727e19964c550ff2114ba4219d))
+
 ## [1.4.0](https://github.com/odintdh/testjel/compare/v1.3.0...v1.4.0) (2023-06-04)
 
 
