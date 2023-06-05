@@ -22,8 +22,8 @@ ARG RECIPE=./recipe.yml
 # templates on immutable Fedora distros, whereas the normal "/etc" is ONLY meant
 # for manual overrides and editing by the machine's admin AFTER installation!
 # See issue #28 (https://github.com/ublue-os/startingpoint/issues/28).
-COPY etc /etc
 COPY usr /usr
+COPY etc /usr/etc
 
 # Copy the recipe that we're building.
 COPY ${RECIPE} /usr/share/ublue-os/recipe.yml
