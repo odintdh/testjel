@@ -16,6 +16,7 @@ cd /tmp/
 #rm -rf /tmp/oversteer
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
+# workaround to execute dconf-update
 cp /usr/etc/systemd/system/dconf-update.service /etc/systemd/system/
 systemctl unmask dconf-update.service
 systemctl enable dconf-update.service
