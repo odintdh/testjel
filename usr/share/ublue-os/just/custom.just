@@ -53,5 +53,10 @@ distrobox-universal:
   echo 'Creating Universal Development distrobox ...'
   distrobox create --image mcr.microsoft.com/devcontainers/universal:latest -n universal -Y
 
+upgrade:
+  rpm-ostree upgrade
+  flatpak update -y
+  distrobox upgrade -a
+
 yafti:
   yafti /usr/share/ublue-os/firstboot/yafti.yml
