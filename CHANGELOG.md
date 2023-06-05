@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.6.0](https://github.com/odintdh/testjel/compare/v1.5.0...v1.6.0) (2023-06-05)
+
+
+### Features
+
+* change etc files destination ([4ffcb8b](https://github.com/odintdh/testjel/commit/4ffcb8ba92f252e799d8d6e8883e496fde5a5b9a))
+
+
+### Bug Fixes
+
+* dconf update service ([24e0aaf](https://github.com/odintdh/testjel/commit/24e0aaf88101a1ecaf5570f2c09bd67db638c4ea))
+* etc files copy ([e7da4fc](https://github.com/odintdh/testjel/commit/e7da4fc1c3be9c66dc44ef704a7ac8948b0b0098))
+* systemd user conf and system conf ([c22a992](https://github.com/odintdh/testjel/commit/c22a992406470b0171b65075a31ec3a7741b4ba6))
+* workaround to execute dconf ([425e755](https://github.com/odintdh/testjel/commit/425e75545dc919ec5aa34af284756804fdf6db48))
+
 ## [1.5.0](https://github.com/odintdh/testjel/compare/v1.4.1...v1.5.0) (2023-06-05)
 
 
