@@ -14,7 +14,7 @@ cd /tmp/
 #ninja install
 #udevadm control --reload-rules && udevadm trigger
 #rm -rf /tmp/oversteer
-sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /usr/etc/systemd/user.conf
-sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /usr/etc/systemd/system.conf
+sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
+sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
 systemctl unmask dconf-update.service
 systemctl enable dconf-update.service
