@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/odintdh/testjel/compare/v1.4.1...v1.5.0) (2023-06-05)
+
+
+### Features
+
+* added upgrade option to just ([90f1abe](https://github.com/odintdh/testjel/commit/90f1abe0ffa192c1dad74a3e634e66a4019ce505))
+
 ## [1.4.1](https://github.com/odintdh/testjel/compare/v1.4.0...v1.4.1) (2023-06-04)
 
 
